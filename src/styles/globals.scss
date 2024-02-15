@@ -3,12 +3,16 @@
 
 :root {
   --main-bg: #222831;
+  --secondary-bg: #004549;
 
   --main-text: #fff;
   --secondary-text: #00ADB5;
+  --gray-text: rgba(238, 238, 238, 0.5);
 
   --main-btn: #00ADB5;
   --hover-btn: #01898d;
+
+  --main-input: rgba(57, 62, 70, 0.5);
 }
 
 * {

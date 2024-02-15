@@ -4,7 +4,7 @@
   margin: 0 auto;
   display: flex;
   width: 100vw;
-  min-height: 800px;
+  min-height: 900px;
   height: 100vh;
   justify-content: center;
 
@@ -25,6 +25,7 @@
       gap: 30px;
 
       p {
+        height: 41px;
         font-size: 18px;
         color: rgba(238, 238, 238, 0.5);
       }
