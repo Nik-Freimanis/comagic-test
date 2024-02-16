@@ -10,6 +10,8 @@
 
   overflow: hidden;
 
+
+  //.btnSection__container
   &__container {
     padding: $containerPadding;
     display: flex;
@@ -17,6 +19,8 @@
     width: $maxWidthContainer;
     min-width: $minWidthContainer;
 
+
+    //.btnSection__container_content
     &_content {
       margin: auto;
       display: flex;
@@ -30,12 +34,16 @@
         color: rgba(238, 238, 238, 0.5);
       }
 
+
+      //.btnSection__container_content_wrapper
       &_wrapper {
         display: flex;
         flex-direction: row;
 
+
+        //.btnSection__container_content_wrapper_title
         &_title {
-          font-size: 96px;
+          font-size: 64px;
           text-transform: uppercase;
           font-weight: 700;
 
@@ -49,6 +57,8 @@
           }
         }
 
+
+        //.btnSection__container_content_wrapper_item
         &_item {
           position: relative;
           display: flex;

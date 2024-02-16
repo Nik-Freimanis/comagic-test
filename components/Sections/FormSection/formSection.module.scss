@@ -1,11 +1,27 @@
 @use '../../../src/styles/variables' as *;
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  font-size: 64px;
+  font-weight: 700;
+
+  h1 {
+    line-height: 90%;
+    color: var(--main-text);
+
+    span {
+      color: var(--secondary-text);
+    }
+  }
+}
+
 .formSection {
   margin: 0 auto;
   display: flex;
   width: 100vw;
   height: 90vh;
-  min-height: 900px;
+  min-height: 800px;
   justify-content: center;
 
   overflow: hidden;
@@ -24,89 +40,20 @@
 
     &_content {
       margin: auto;
-
       display: flex;
       flex-direction: row;
-      //justify-content: space-between;
-      gap: 35px;
+      justify-content: space-between;
+      width: 100%;
+      //gap: 35px;
       align-items: center;
 
-      &_form {
+      &_items {
         display: flex;
         flex-direction: column;
-        gap: 28px;
-        width: 480px;
-
-        &_textareaBox {
-          position: relative;
-          padding: 18px 20px;
-          width: 100%;
-          height: 72px;
-
-          font-size: 14px;
-          background: var(--main-input);
-
-          border-radius: 24px;
-
-          label {
-            position: absolute;
-            top: 2px;
-            font-size: 10px;
-            font-weight: 400;
-            color: var(--gray-text);
-          }
-        }
-
-        textarea {
-          width: 100%;
-          height: 100%;
-          resize: none;
-          outline: none;
-          color: var(--secondary-text);
-          transition: color 0.3s ease 0s;
-
-          &:focus {
-            color: var(--main-text);
-          }
-        }
-
-        &_name {
-          display: flex;
-          flex-direction: row;
-          gap: 28px;
-        }
-
-        &_data {
-          display: flex;
-          flex-direction: column;
-          gap: 28px;
-
-
-          p {
-            font-size: 18px;
-            color: var(--gray-text);
-            overflow: hidden;
-            word-break: break-word;
-          }
-        }
-      }
-
-      &_title {
-        display: flex;
-        flex-direction: column;
+        width: 100%;
         gap: 64px;
         font-size: 64px;
         font-weight: 700;
-
-        &_img {
-          display: flex;
-          flex-direction: row;
-          gap: 100px;
-
-          [id='arrow'] {
-            transform: rotate(320deg)
-          }
-        }
 
         h1 {
           line-height: 90%;
@@ -116,7 +63,95 @@
             color: var(--secondary-text);
           }
         }
+
+        p {
+          margin: 0 auto;
+          font-size: 18px;
+          color: var(--gray-text);
+          font-weight: 500;
+        }
+
+        &_form {
+          display: flex;
+          flex-direction: column;
+          gap: 28px;
+          width: 480px;
+
+          &_textareaBox {
+            position: relative;
+            padding: 18px 20px;
+            width: 100%;
+            height: 72px;
+
+            font-size: 14px;
+            background: var(--main-input);
+
+            border-radius: 24px;
+
+            label {
+              position: absolute;
+              top: 2px;
+              font-size: 10px;
+              font-weight: 400;
+              color: var(--gray-text);
+            }
+          }
+
+          textarea {
+            width: 100%;
+            height: 100%;
+            resize: none;
+            outline: none;
+            color: var(--secondary-text);
+            transition: color 0.3s ease 0s;
+
+            &:focus {
+              color: var(--main-text);
+            }
+          }
+
+          &_name {
+            display: flex;
+            flex-direction: row;
+            gap: 28px;
+          }
+
+          &_data {
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+
+
+            p {
+              overflow: hidden;
+              word-break: break-word;
+            }
+          }
+        }
+
+        &_wrapper {
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          justify-content: space-between;
+          //gap: 64px;
+
+
+          &_img {
+            display: flex;
+            flex-direction: row;
+            gap: 128px;
+
+            [id='arrow'] {
+              transform: rotate(320deg)
+            }
+          }
+        }
       }
+
+
+
+
     }
 
   }

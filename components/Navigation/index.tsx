@@ -8,8 +8,7 @@ import { usePathname } from 'next/navigation';
 
 const navList = [
     {id: 1, text: 'Домой', link: '/', enabled: true},
-    {id: 2, text: 'Страница 1', link: '/page1', enabled: true},
-    {id: 3, text: 'Страница 2', link: '/page2', enabled: true},
+    {id: 2, text: 'Создание роутеров', link: '/router', enabled: true},
 ]
 
 export const Navigation = () => {

@@ -5,16 +5,17 @@ import s from "./year.module.scss";
 import Button from "@components/UI/Button/Button";
 
 export const YearSection = () => {
-    const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+    const [currentYear, setCurrentYear] = useState();
 
     useEffect(() => {
-        const updateYear = () => {
-            setCurrentYear(new Date().getFullYear());
-        };
-        updateYear();
+
+        // @ts-ignore
+        setCurrentYear(new Date().getFullYear());
+
     }, []);
 
     const handleUpdateYear = () => {
+        // @ts-ignore
         setCurrentYear(new Date().getFullYear());
     };
 

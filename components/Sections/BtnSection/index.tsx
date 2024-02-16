@@ -28,8 +28,8 @@ export const BtnSection = () => {
                             <h1>создание компонента <span>кнопки</span></h1>
                         </div>
                         <div className={s.btnSection__container_content_wrapper_item}>
-                            <Image id={'person'} src={person} alt={'person'}/>
-                            <Image id={'bg_person'} src={bg} alt={'bg'}/>
+                            <Image id={'person'} src={person} alt={'person'} priority={true}/>
+                            <Image id={'bg_person'} src={bg} alt={'bg'} priority={true}/>
                         </div>
                     </div>
                     <Typewriter

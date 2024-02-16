@@ -2,6 +2,7 @@
 import React from 'react';
 import s from './header.module.scss';
 import { Navigation } from '../Navigation';
+import Link from "next/link";
 
 export const Header = () => {
 
@@ -9,7 +10,7 @@ export const Header = () => {
     return (
         <header className={s.header}>
             <div className={s.header__container}>
-                <div className={s.header__container_logo}>Тестовое Comagic</div>
+                <Link className={s.header__container_logo} href={'/'}>Тестовое в Comagic</Link>
                 <Navigation />
             </div>
         </header>

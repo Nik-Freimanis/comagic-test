@@ -22,7 +22,7 @@ const Typewriter: FC<TypewriterProps> = ({ text }) => {
             index++;
 
             if (index === text.length) clearInterval(interval);
-        }, 100);
+        }, 30);
 
         return () => clearInterval(interval);
     }, [text]);
